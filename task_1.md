@@ -1,10 +1,10 @@
-1. Опишите, какие проблемы могут возникнуть при использовании данного кода
-...
-$mysqli = new mysqli("localhost", "my_user", "my_password", "world");
-$id = $_GET['id'];
-$res = $mysqli->query('SELECT * FROM users WHERE u_id='. $id);
-$user = $res->fetch_assoc();
-…
+### 1. Опишите, какие проблемы могут возникнуть при использовании данного кода
+### ...
+### $mysqli = new mysqli("localhost", "my_user", "my_password", "world");
+### $id = $_GET['id'];
+### $res = $mysqli->query('SELECT * FROM users WHERE u_id='. $id);
+### $user = $res->fetch_assoc()
+### ...
 
 Ответ:
 1. Нет проверки подключения к базе. В случае ошибки подключения к БД возникнет ошибка при выполнении запроса.
